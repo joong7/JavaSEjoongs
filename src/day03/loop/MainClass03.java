@@ -1,44 +1,29 @@
 package day03.loop;
 /*
- * 	[[반복문 ]]
- * 	특정 부분의 코드가 반복적으로 수행하도록 하는 제어문.
+ * 	3.for 문
+ * 		초기식, 조건식, 증감식을 이용하여 반복적으로 코드 블록을 실행하는 제어문
  * 
- * 	1.whiile 문
- * 		while(조건문) {
- * 			반복 수행할 코드
+ * 	for(초기식; 조건식; 증감식) {
+ * 		반복 수행할 코드
  * }
  * 
- * 
+ * 	초기식 -> 조건식 -> 반복수행코드 -> 증감식 -> 조건식 -> 반복수행코드 ... 조건식 false 까지 반복
  */
+
 public class MainClass03 {
 
 	public static void main(String[] args) {
-		//while문을 이용해서 0~99까지 출력하기
-		int count = 0;
-		while(true) {
-			System.out.println(count);
-			++count; // count + 1
-			if(count == 100 )
-				break;
+		// for문을 이용하여 0부터 9까지 숫자를 출력하기
+		for (int i = 0; i<10; i++) {
+			System.out.println(i); // i값을 축력하기
+		}
+		int i = 0;
+		while(i<10) {
+			System.out.println(i);
+			i++;
 		}
 		
-		count = 0;
-		while(count < 100) {
-			System.out.println(count);
-			++count;
-		}
-		
-		count = 0;
-		boolean isRun = true;
-		while(isRun) {
-			System.out.println(count);
-			++count;
-			if(count == 100)
-				isRun = false;
-		
-		
-		System.out.println("메인 메소드 종료!");
-	}
 
 	}
+
 }

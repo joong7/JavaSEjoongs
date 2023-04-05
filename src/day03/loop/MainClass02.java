@@ -1,25 +1,44 @@
 package day03.loop;
-
 /*
- * 2. do ~ while()문
- * 	while문과 비슷하지만, 최소 한번은 실행된다
+ * 	[[반복문 ]]
+ * 	특정 부분의 코드가 반복적으로 수행하도록 하는 제어문.
  * 
- * do{
- * 		반복 수행할 코드
- * } shile(조건문);
- * 	
+ * 	1.whiile 문
+ * 		while(조건문) {
+ * 			반복 수행할 코드
+ * }
+ * 
  * 
  */
-
 public class MainClass02 {
 
 	public static void main(String[] args) {
+		//while문을 이용해서 0~99까지 출력하기
 		int count = 0;
-		do {
+		while(true) {
 			System.out.println(count);
-			count++;
-		}while(count < 100);
-
+			++count; // count + 1
+			if(count == 100 )
+				break;
+		}
+		
+		count = 0;
+		while(count < 100) {
+			System.out.println(count);
+			++count;
+		}
+		
+		count = 0;
+		boolean isRun = true;
+		while(isRun) {
+			System.out.println(count);
+			++count;
+			if(count == 100)
+				isRun = false;
+		
+		
+		System.out.println("메인 메소드 종료!");
 	}
 
+	}
 }

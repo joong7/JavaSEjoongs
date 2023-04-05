@@ -1,5 +1,9 @@
 package day03.conditional;
-
+/*
+ * 	null - 변수의 값이 없다! 
+ * 		정확히는 참조형 변수에 잠조값이 없다!!
+ * 
+ */
 public class MainClass02 {
 	public static void main(String[] args) {
 		int score = 75;
